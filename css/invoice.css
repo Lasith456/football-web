@@ -1,0 +1,79 @@
+.logoInvoice{
+    width:130px;
+    text-align: left;
+}
+.col-2-inv{
+    width:50%;
+    display: flex;
+    align-items: center;
+}
+.invoiceHeader h2{
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.invoiceWrap{
+    margin: auto;
+    width: 800px;
+    border:solid;
+    border-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.invoiceHeader{
+    font-size: 30px;
+    background-color: #f5f5f5;
+}
+
+.row-invoice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.invoiceHeader img{
+    padding-left:20px ;
+    width:100px;
+}
+.text-right{
+    text-align: right;
+    margin-right:50px;
+}
+
+.bolded{
+    font-weight: 600;
+}
+
+.order-info{
+    width:90%;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px 10px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+.order-info td p{
+    margin:5px 0
+}
+
+.order-info td, .order-info th{
+    border-width:1px;
+    border-right:dashed;
+    border-color: #818181;
+}
+.hide-border{
+    border-right:none !important;
+}
+.order-info tr{
+    padding: 50px;
+}
+.flex-right{
+    justify-content: flex-end;
+}
