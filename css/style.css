@@ -1,0 +1,90 @@
+/* Parent Container */
+body{
+    justify-content: center;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+*{
+    font-family: "Calibri";
+}
+.heading{
+    text-align: center;
+}
+.content_img{
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 60px;
+
+
+}
+
+/* Child Text Container */
+.content_img div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;  
+    transition: visibility 0s, opacity 0.5s linear;
+    
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+    cursor: pointer;
+}    
+
+.content_img:hover div{
+    width: 300px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7;  
+    size: 10px;      
+}
+
+.ovelay-text{
+    position: absolute;
+    z-index: 15;
+    color: #fff;
+    top: 0.2%;
+    bottom: -20px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.ovelay-text h2{
+
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all is ease;
+    font-size: 30px;
+    margin: 5px 0 15px;
+    position: relative;
+    top: -10px;
+    transition: all 0.3s ease-out;
+}
+.content_img:hover h3{
+    top: 0;
+}
+.ovelay-text h3{
+    position: relative;
+    
+}
+
+.ovelay-text:hover h2{
+    text-shadow: 3px 3px 3px blue;
+    top: -15px;
+}
