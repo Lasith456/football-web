@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sport X - View_Form</title>
+        <link rel="stylesheet" href="../css/website_styles.css">
+        <link rel = "icon" href ="../images/Sport-X-Logo.png" type = "image/x-icon">
+    </head>
+    <body>
+        <header>
+            <!-- Web site logo -->
+            <a href="../images/Sport-X-Logo.jpg" class="logo">Sport X</a>
+            <!-- Day and Night Themes changer and menu -->
+            <div class="rightSide">
+                <div class="buttons dayNight">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </div>
+                <div class="buttons menuToggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+        </header>
+        
+        <!--Navigation Sidebar-->
+        <ul class="navigation">
+            <li><a href="../pasindu/Main_Page.html">Home</a></li>
+            <li><a href="../pasindu/Query_Form.html">Query Form</a></li>
+            <li><a href="../tharindu/buy-products.html">Shop</a></li>
+            <li><a href="../dulan/quiz.html">Quiz</a></li>
+            <li><a href="../lasith/svg.html">Site Map</a></li>
+            <li><a href="../lasith/Gallery_view.html">Gallery</a></li>
+            <li><a href="../Additional_Content.html">Extra Content</a></li>
+            <li><a href="../dulan/index.html">About Us</a></li>
+        </ul>
+
+        <!-- Display filled form data in another web page -->
+        <form action="">
+            <div class="output">
+                    <h2> Filled Details</h2>
+                    <br><br>
+                    <p>
+                        <b>Full Name: </b><span id="filled-name" ></span>
+                    </p><br>
+                    <p>
+                        <b>Email Address: </b><span id="filled-email" ></span>
+                    </p><br>
+                    <p>
+                        <b>Subject: </b><span id="filled-subject" ></span>
+                    </p><br>
+                    <p>
+                        <b>Country: </b><span id="filled-country" ></span>
+                    </p><br>
+                    <p>
+                        <b>Query Detail: </b><span id="filled-details" ></span>
+                    </p>
+                    <br><br>
+                    
+                    <button type="button" id="datasend"><a href="mailto: abc@example.com" id="send">Send</a></button>
+                    <button type="button" id="edit" onclick="history.back()">Edit</button>
+            </div>
+        </form>
+
+
+        <!-- Page editors link -->
+        <div id="editor">
+            <a href="editors-pasindu.html">Page Editors Page</a>
+        </div> 
+
+
+        <script src="../js/website_javascript.js"></script>
+        
+        <!-- Link for webpage icons sourcecode -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
