@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sport X - Gallery</title>
+    <link rel="stylesheet" href="../css/Gallery_view.css">
+    <link rel = "icon" href ="../images/Sport-X-Logo.png" type = "image/x-icon">
+  </head>
+
+  <body>
+    <header>
+      <!-- Web site logo -->
+      <a href="../images/Sport-X-Logo.jpg" class="logo">Sport X</a>
+      <!-- Day and Night Themes changer and menu -->
+      <div class="rightSide">
+        <div class="buttons dayNight">
+          <ion-icon name="moon-outline"></ion-icon>
+          <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <div class="buttons menuToggle">
+          <ion-icon name="menu-outline"></ion-icon>
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+      </div>
+    </header>
+    <!--Navigation Sidebar-->
+    <ul class="navigation">
+      <li><a href="../pasindu/Main_Page.html">Home</a></li>
+      <li><a href="../pasindu/Query_Form.html">Query Form</a></li>
+      <li><a href="../tharindu/buy-products.html">Shop</a></li>
+      <li><a href="../dulan/quiz.html">Quiz</a></li>
+      <li><a href="../lasith/svg.html">Site Map</a></li>
+      <li><a href="../lasith/Gallery_view.html">Gallery</a></li>
+      <li><a href="../Additional_Content.html">Extra Content</a></li>
+      <li><a href="../dulan/index.html">About Us</a></li>
+    </ul>
+    <div class="gallery">
+      <h1><i><u>Gallery</u></i></h1>
+      <div class="bg-colour">
+        <!--Background Colour Change-->
+        <label>Choose a background Colour</label>
+        <select name="list" onchange="bgcolor(this.value)">
+          <option value="">None</option>
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Purple">Purple</option>
+          <option value="Black">Black</option>
+          <option value="Green">Green</option>
+          <!-- Background colour change java script code-->
+          <script>
+            function bgcolor(value) {
+              document.body.style.backgroundColor = value;
+            }
+          </script>
+        </select>
+
+      </div>
+
+      <div class="txt-colour">
+        <!--Font Colour Change-->
+        <label>Choose a Font Colour</label>
+        <select name="list" onchange="txtcolor(this.value)">
+          <option value="">None</option>
+          <option value="Orange">Orange</option>
+          <option value="LightBlue">LightBlue</option>
+          <option value="Pink">pink</option>
+          <option value="Black">Black</option>
+          <option value="Gray">Gray</option>
+          <!--Font colour change java script code-->
+          <script>
+            function txtcolor(value) {
+              document.body.style.color = value;
+            }
+          </script>
+        </select>
+
+      </div>
+
+      <!--Galler View-->
+      <div class="Gallery">
+        <img src="../images/Gallery_view_Images/1.jpg" id="one" onclick="myFunction(this);"
+          alt="<h2>Players</h2><p>Football players are the sports persons who play football on the professional level. Football is a team sport that involves kicking a ball with the foot to score a goal.Only one football team have 11 football players.</p>">
+        <img src="../images/Gallery_view_Images/2.jpeg" id="two" onclick="myFunction(this);" alt="<h2>Football (Ball)</h2><p>Most footballs are classified for use among four main age groups that leagues are normally divided into:<br>
+                <ul>Pee Wee Footballs: Best for players ages 6-9.</ul>
+                <ul>Junior Footballs: Best for players ages 9-12.</ul>
+                <ul>Youth Footballs: Best for players ages 12-14.</ul>
+                <ul>Official Footballs: Best for players 14 and older.</ul></p>">
+        <img src="../images/Gallery_view_Images/3.jpg" id="three" onclick="myFunction(this);"
+          alt="<h2>Football cup</h2><p>The Football Association Challenge Cup, more commonly known as the FA Cup, is an annual knockout football competition in men's domestic English football. First played during the 1871–72 season, it is the oldest national football competition in the world.</p>">
+        <img src="../images/Gallery_view_Images/4.jpg" id="four" onclick="myFunction(this);"
+          alt="<h2>Football Boots</h2><p>Football boots, called cleats or soccer shoes in North America, are an item of footwear worn when playing association football. Those designed for grass pitches have studs on the outsole to aid grip.</p>">
+        <img src="../images/Gallery_view_Images/5.jpg" id="five" onclick="myFunction(this);"
+          alt="<h2>Goal</h2><p>In games such as football, netball, or hockey, the goal is the space into which the players try to get the ball in order to score a point for their team.</p>">
+      </div>
+      <!-- Big Image View -->
+      <div class="container">
+
+        <img id="expandedImg" alt="this is an image">
+        <div id="imgtext"></div>
+      </div>
+    </div>
+
+    <!--Gllery View java script code-->
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+
+    <!-- Link for webpage icons sourcecode -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Day and Night theme changer javascript code -->
+    <script>
+      let dayNight = document.querySelector('.dayNight')
+      let menuToggle = document.querySelector('.menuToggle')
+      let body = document.querySelector('body')
+      let navigation = document.querySelector('.navigation')
+
+      dayNight.onclick = function () {
+        body.classList.toggle('dark')
+        dayNight.classList.toggle('active')
+      }
+
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+         <!-- Page editors link -->
+         <div id="editor">
+          <a href="editors-lasith.html">Page Editors Page</a>
+        </div>
+  </body>
+</html>
