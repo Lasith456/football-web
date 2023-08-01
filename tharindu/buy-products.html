@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sport X - Shop</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+
+    <link rel="stylesheet" href="../css/buy-products.css">
+    <link rel="stylesheet" href="../css/invoice.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <!-- Web site logo -->
+        <a href="/../images/Sport-X-Logo.jpg" class="logo">Sport X</a>
+        <!-- Day and Night Themes changer and menu -->
+        <div class="rightSide">
+            <div class="buttons dayNight">
+                <ion-icon name="moon-outline"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
+            </div>
+            <div class="buttons menuToggle">
+                <ion-icon name="menu-outline"></ion-icon>
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <!--Navigation Sidebar-->
+    <ul class="navigation">
+        <li><a href="../pasindu/Main_Page.html">Home</a></li>
+        <li><a href="../pasindu/Query_Form.html">Query Form</a></li>
+        <li><a href="../tharindu/buy-products.html">Shop</a></li>
+        <li><a href="../dulan/quiz.html">Quiz</a></li>
+        <li><a href="../lasith/svg.html">Site Map</a></li>
+        <li><a href="../lasith/Gallery_view.html">Gallery</a></li>
+        <li><a href="../Additional_Content.html">Extra Content</a></li>
+        <li><a href="../dulan/index.html">About Us</a></li>
+    </ul>
+
+    <div id="main">
+        <div class="products-topbar">
+            <div class="left-bar">
+                <span id="filter-btn" onclick="openFilter()" >
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 171 171" style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal"><path d="M0,171.99231v-171.99231h171.99231v171.99231z" fill="none"></path><g fill="#2879fe"><path d="M13.03875,6.84c-1.62984,0.30727 -2.80547,1.75008 -2.77875,3.42v10.26c0.01336,0.88172 0.34735,1.72336 0.96187,2.35125l53.75813,57.07125v60.2775c0.02672,1.18898 0.68133,2.28445 1.71,2.88563l34.2,20.52c1.04203,0.60117 2.33789,0.61453 3.39328,0.01336c1.04203,-0.58781 1.71,-1.69664 1.73672,-2.89898v-80.7975l53.22375,-56.53687c0.04008,-0.04008 0.0668,-0.0668 0.10688,-0.10688l0.4275,-0.4275c0.16031,-0.16031 0.30727,-0.34734 0.4275,-0.53438c0.08016,-0.0668 0.14695,-0.13359 0.21375,-0.21375c0.20039,-0.44086 0.30727,-0.90844 0.32063,-1.38937c0,-0.0668 0,-0.14695 0,-0.21375c0.01336,-0.17367 0.01336,-0.3607 0,-0.53438v-9.72562c0,-1.88367 -1.53633,-3.42 -3.42,-3.42h-143.64c-0.10688,0 -0.21375,0 -0.32062,0c-0.10688,0 -0.21375,0 -0.32062,0zM17.1,13.68h136.8v5.5575l-52.79625,56.0025h-31.2075l-52.79625,-56.0025zM71.82,82.08h27.36v72.675l-27.36,-16.35188z"></path></g></g>
+                    </svg>
+                    <span>FILTER</span>
+                </span>
+            </div>
+            <div class="right-bar">
+                <svg id = "col-3-btn" class="col-btn col-btn-disable" data-col="3" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+                    <rect width="5" height="5"></rect>
+                    <rect x="7" width="5" height="5"></rect>
+                    <rect x="14" width="5" height="5"></rect>
+                    <rect y="7" width="5" height="5"></rect>
+                    <rect x="7" y="7" width="5" height="5"></rect>
+                    <rect x="14" y="7" width="5" height="5"></rect>
+                    <rect y="14" width="5" height="5"></rect>
+                    <rect x="7" y="14" width="5" height="5"></rect>
+                    <rect x="14" y="14" width="5" height="5"></rect>
+                </svg>
+                <svg id ="col-4-btn" class="col-btn col-btn-active" data-col="4" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+                    <rect width="4" height="4"></rect>
+                    <rect x="5" width="4" height="4"></rect>
+                    <rect x="10" width="4" height="4"></rect>
+                    <rect x="15" width="4" height="4"></rect>
+                    <rect y="5" width="4" height="4"></rect>
+                    <rect x="5" y="5" width="4" height="4"></rect>
+                    <rect x="10" y="5" width="4" height="4"></rect>
+                    <rect x="15" y="5" width="4" height="4"></rect>
+                    <rect y="15" width="4" height="4"></rect>
+                    <rect x="5" y="15" width="4" height="4"></rect>
+                    <rect x="10" y="15" width="4" height="4"></rect>
+                    <rect x="15" y="15" width="4" height="4"></rect>
+                    <rect y="10" width="4" height="4"></rect>
+                    <rect x="5" y="10" width="4" height="4"></rect>
+                    <rect x="10" y="10" width="4" height="4"></rect>
+                    <rect x="15" y="10" width="4" height="4"></rect>
+                </svg>
+                <svg id ="col-6-btn" class="col-btn col-btn-disable" data-col="6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23px" height="19px" viewBox="0 0 23 19" enable-background="new 0 0 23 19" xml:space="preserve">
+                    <rect width="3" height="4"></rect>
+                    <rect x="4" width="3" height="4"></rect>
+                    <rect x="8" width="3" height="4"></rect>
+                    <rect x="12" width="3" height="4"></rect>
+                    <rect x="16" width="3" height="4"></rect>
+                    <rect x="20" width="3" height="4"></rect>
+                    <rect y="5" width="3" height="4"></rect>
+                    <rect x="4" y="5" width="3" height="4"></rect>
+                    <rect x="8" y="5" width="3" height="4"></rect>
+                    <rect x="12" y="5" width="3" height="4"></rect>
+                    <rect x="16" y="5" width="3" height="4"></rect>
+                    <rect x="20" y="5" width="3" height="4"></rect>
+                    <rect y="10" width="3" height="4"></rect>
+                    <rect x="4" y="10" width="3" height="4"></rect>
+                    <rect x="8" y="10" width="3" height="4"></rect>
+                    <rect x="12" y="10" width="3" height="4"></rect>
+                    <rect x="16" y="10" width="3" height="4"></rect>
+                    <rect x="20" y="10" width="3" height="4"></rect>
+                    <rect y="15" width="3" height="4"></rect>
+                    <rect x="4" y="15" width="3" height="4"></rect>
+                    <rect x="8" y="15" width="3" height="4"></rect>
+                    <rect x="12" y="15" width="3" height="4"></rect>
+                    <rect x="16" y="15" width="3" height="4"></rect>
+                    <rect x="20" y="15" width="3" height="4"></rect>
+                </svg>
+            </div>
+        </div>
+        <!-- products filter -->
+        <div class="products-grid">
+        </div>
+
+        <!-- sidebar -->
+        <div class="sideFilter">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeFilter()">&times;</a>
+            <div class="filterSection">
+                <form name="filter">
+                    <div class="filterGroup">
+                        <div>
+                            <h4>Product Categories</h4>
+                            <hr>
+                        </div>
+                        <div>
+                            <div class="filter-item">
+                                <input class="filter-check" name="categories" type="checkbox" value="Jersys" id="check1-category" />
+                                <label class="filter-check-label" for="check1-category">Jersys</label>
+                            </div>
+                            <div class="filter-item">
+                                <input class="filter-check" name="categories" type="checkbox" value="Socks" id="check2-category" />
+                                <label class="filter-check-label" for="check1-category">Socks</label>
+                            </div>
+                            <div class="filter-item">
+                                <input class="filter-check" name="categories" type="checkbox" value="Footballs" id="check3-category" />
+                                <label class="filter-check-label" for="check1-category">Footballs </label>
+                            </div>
+                            <div class="filter-item">
+                                <input class="filter-check" name="categories" type="checkbox" value="" id="check4-category" />
+                                <label class="filter-check-label" for="check1-category">Shorts</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filterGroup">
+                        <div>
+                            <h4>Price range</h4>
+                            <hr>
+                        </div>
+                        <div>
+                            <input class="priceRange" type="number" placeholder="min"  id="price-min" />
+                            <span class="dash-line">-</span><input class="priceRange" type="number" placeholder="max"  id="price-max" />
+                        </div>
+                    </div>
+                    <div class="filterGroup">
+                        <div>
+                            <h4>Colors</h4>
+                            <hr>
+                        </div>
+                        <div class="product-colors filter-colors">
+                            <div class="color-wrapper">
+                                <div class="colors color-01"></div>
+                            </div>
+                            <div class="color-wrapper">
+                                <div class="colors color-02"></div>
+                            </div>
+                            <div class="color-wrapper">
+                                <div class="colors color-03"></div>
+                            </div>
+                            <div class="color-wrapper">
+                                <div class="colors color-04"></div>
+                            </div>
+                            <div class="color-wrapper">
+                                <div class="colors color-05"></div>
+                            </div>
+                            <div class="color-wrapper">
+                                <div class="colors color-06"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- added to cart notification -->
+        <div class="cartNotify">
+        </div>
+        <!-- cart  -->
+        <div class="cart">
+            <div class="cart-left-col">
+            </div>
+            <div class="cart-right-col">
+                <div class="cart-box">
+                    <h2 class="text-center col-1">Order Summary</h2>
+                    <div class="catr-box-left">
+                        <p>Sub Total</p>
+                    </div>
+                    <div class="cart-box-right">
+                        <p id="cart-total">LKR4343.00</p>
+                    </div>
+                </div>
+                <div class="form-box">
+                    <form class="info-form flex-box">
+                        <input type="text" name="firstName" placeholder="Frst Name">
+                        <input type="text" name="lastName" placeholder="Last Name">
+                        <input type="email" name="email" placeholder="email address">
+                        <input type="text" name="street" placeholder="Street">
+                        <input type="text" name="city" placeholder="City">
+                    </form>
+                </div>
+                <div class="cart-box">
+                        <button class="btn " onclick="closeCart()">BACK TO SHOPPING</button>
+                        <button class="btn-blue" onclick="invoiceShow()">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        <!-- invoice -->
+        <div class="invoiceModel">
+            <div class="invoiceWrap">
+                <div class="invoiceHeader">
+                    <div style="text-align: center;">
+                        <h2 class="">Invoice No: 01</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="order-info">
+                        <tr>
+                            <th>Order No</th>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                            <th class="hide-border">Address</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>1</p>
+                            </td>
+                            <td>
+                                <p id="name">Tharndu Bimsara</p>
+                            </td>
+                            <td>
+                                <p id="email">tharindu@gmail.com</p>
+                            </td>
+                            <td class="hide-border">
+                                <p id="street">197, Wijayarajadahana</p>
+                                <p id="city">Mirigama</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="row">
+                    <table class="invoice-table">
+                    </table>
+                </div>
+                <div class="row">
+                    <button class="btn-blue" onclick="closeInovice()">Back To Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <p>© copyrightText - 2022</p>
+        </div>
+        <div class="footer-right">
+            <a href="editors-tharindu.html"><p>Editor's Page</p></a>
+        </div>
+    </div>
+    <script src="../js/buy-products.js"></script>
+    <script src="../js/header.js"></script>
+    <!-- Link for webpage icons source code -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
