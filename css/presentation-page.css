@@ -1,0 +1,146 @@
+.preWrap{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color:  rgba(48, 65, 223, 0.144);
+    z-index: 0;
+}
+body{
+    margin: 0;
+    overflow-y:hidden;
+}
+.test{
+    display: block;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin: auto;
+    height:100vh;
+}
+h1 {
+    font-size: 17vw;
+    z-index: 1;
+    color: rgb(9, 12, 219);
+}
+.order{
+    animation-name: fadeIn;
+    z-index: 2;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.ab-position{
+    position: absolute;
+}
+.tharindu {
+    width: 24%;
+    bottom: -3%;
+    left:29.5%
+    
+}
+
+.pasindu{
+    width: 21%;
+    bottom: -3%;
+    left: 15%;
+}
+
+.lasith{
+    width: 27%;
+    bottom: -3%;
+    right: 14%;
+}
+
+.dulan{
+    width: 23%;
+    bottom: -3%;
+    right: 30%;
+}
+
+.iit{
+    width: 120px;
+    top: 20px;
+    right: 5%;
+}
+.west{
+    width: 200px;
+    top: 20px;
+    left: 5%;
+}
+.dulan-text{
+    width:380px;
+    right: 15%;
+    bottom: 350px;
+}
+
+.tharindu-text{
+    width:380px;
+    left: 15%;
+    bottom: 350px;
+}
+
+.pasindu-text{
+    width:220px;
+    left: 4%;
+    bottom: 80px;
+}
+
+.lasith-text{
+    width:220px;
+    right: 4%;
+    bottom: 80px;
+}
+
+
+
+.floating{
+    animation-name: floating, example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.order1{
+    z-index: 3;
+}
+.expandTop{
+    animation-name: expand;
+    animation-duration: 1s;
+}
+
+.expandBottom{
+    animation-name: expandB;
+    animation-duration: 1s;
+}
+
+  
+  @keyframes example {
+    0%   {color:red;}
+    25%  {color:rgb(183, 0, 255);}
+    50%  {color:rgb(0, 195, 255);}
+    75%  {color:rgb(9, 12, 219);}
+    100% {color:red;}
+  }
+
+  @keyframes floating {
+    0%   {top:0;}
+    25%  {top:-1%;}
+    50%  {top:0;}
+    75%  {top:-1%;}
+    100% {top:-0;}
+
+  }
+
+  @keyframes fadeIn {
+    0%   { opacity: 0;}
+    100% { opacity: 100%;}
+  }
+
+  @keyframes expand {
+    0%   { width: 0;}
+    100% { width: 380px;}
+  }
+
+  @keyframes expandB {
+    0%   { width: 0;}
+    100% { width: 220px;}
+  }
