@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* Main page CSS Properties */
+/* Global CSS styles  */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* root element of the colour changer */
+:root
+{
+    --black: #333;
+    --white: #fff;
+}
+/* element to change dark and light */
+.dark
+{
+    --black: #fff;
+    --white: #333;
+}
+/* body colour */
+body
+{
+    background-color: var(--white);
+}
+/* header styles */
+header
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+/* logo name styles */
+header .logo
+{
+    position: relative;
+    display: inline-flex;
+    color: var(--black);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+/* menu and colour changer position */
+.rightSide
+{
+    display: flex;
+}
+/* buttons styles */
+.buttons
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* import icons styles */
+.buttons ion-icon
+{
+    font-size: 1.5em;
+    color: var(--black);
+}
+.buttons.menuToggle ion-icon
+{
+    font-size: 3em;
+}
+/* pseudo-class selector of icons */
+.buttons ion-icon:nth-child(2)
+{
+    display: none;
+}
+.buttons.active ion-icon:nth-child(2)
+{
+    display: block;  
+}
+.buttons.active ion-icon:nth-child(1)
+{
+    display: none;
+}
+/* main class styles */
+.main
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* background video styles */
+.main video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* background mask styles */
+.backgroundimg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    user-select: none;
+    mix-blend-mode: screen;
+}
+/* light and dark colour changer for main page */
+.dark .backgroundimg
+{
+    filter: invert(1);
+    mix-blend-mode: multiply;
+}
+/* main class heading styles */
+.main h2
+{
+    position: relative;
+    z-index: 3;
+    font-size: 15vw;
+    color: #fff;
+    text-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+/* right side navigation style properties */
+.navigation
+{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--white);
+    z-index: 4;
+    transition: 0.5s;
+}
+/* navigation sidebar position */
+.navigation.active
+{
+    left: 0;
+}
+.navigation li
+{
+    list-style: none;
+}
+.navigation li a
+{
+    display: inline-flex;
+    margin: 5px 0;
+    font-size: 1.35em;
+    text-decoration: none;
+    color: var(--black);
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+/* navigation hover effect */
+.navigation li a:hover
+{
+    background: var(--black);
+    color: var(--white);
+}
+#editor
+{
+    color: var(--black);
+    position: fixed;
+    float: right;
+    bottom: 0;
+    right: 0;
+}
+a
+{
+    color: var(--black);
+    text-decoration: none;
+}
+/* copyrightText styles */
+.copyrightText
+{
+    position: absolute;
+    left: 100px;
+    bottom: 40px;
+    z-index: 4;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: var(--black);
+}
+/* socialmedia icons styles */
+.socialMedia
+{
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+}
+.socialMedia li
+{
+    list-style: none;
+}
+.socialMedia li a
+{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.75em;
+}
+/* footer styles */
+footer
+{
+    background-color: var(--white);
+    color: var(--black);
+    transition: 0.5s;
+}
+/* background video, header, copyrighttext and socialmedia position */
+@media (max-width: 768px)
+{
+    header
+    {
+        padding: 20px;
+    }
+    .copyrightText
+    {
+        left: 20px;
+        bottom: 30px;
+    }
+    .socialMedia
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/* Quary Form and View Form CSS Properties */
+
+/* bold font size */
+b
+{
+    font-size: 20px;
+}
+/* input type container and text areas styles */
+input[type=text], textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: var(--black);
+    background-color: var(--white);
+}
+textarea
+{
+    height: 200px;
+}
+/* select section styles */
+select
+{
+    width: 50%;
+    padding: 12px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: var(--black);
+    background-color: var(--white);
+}
+/* input type email styles */
+input[type=email]
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: var(--black);
+    background-color: var(--white);
+}
+/* buttons and submit styles */
+input[type=button], input[type=submit]
+{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 6px;
+}
+/* buttons and submit hover styles */
+input[type=button]:hover
+{
+    background-color: #777777;
+}
+input[type=submit]:hover
+{
+    background-color: #777777;
+}
+/* buttons styles */
+button
+{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 6px;
+}
+button:hover
+{
+    background-color: #777777;
+}
+/* hyperlinks colour changer */
+#send
+{
+    color: var(--white);
+}
+/* form container styles */
+.container
+{
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 20px;
+    color: var(--black);
+}
+/* form styles */
+.queryform
+{
+    position: absolute;
+    margin-top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* query form display view styles */
+div.output
+{
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: auto;
+    position: absolute;
+    color: var(--black);
+}
+
+
