@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbarQ.css">
+	<link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <!-- header -->
+        <header>
+            <!-- Web site logo -->
+            <a href="../images/Sport-X-Logo.jpg" class="logo">Sport X</a>
+            <!-- Day and Night Themes changer and menu -->
+            <div class="rightSide">
+                <div class="buttons dayNight">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </div>
+                <div class="buttons menuToggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+        </header>
+
+<!--Navigation Sidebar-->
+    <ul class="navigation">
+      <li><a href="../pasindu/Main_Page.html">Home</a></li>
+      <li><a href="../pasindu/Query_Form.html">Query Form</a></li>
+      <li><a href="../tharindu/buy-products.html">Shop</a></li>
+      <li><a href="../dulan/quiz.html">Quiz</a></li>
+      <li><a href="../lasith/svg.html">Site Map</a></li>
+      <li><a href="../lasith/Gallery_view.html">Gallery</a></li>
+      <li><a href="../Additional_Content.html">Extra Content</a></li>
+      <li><a href="../dulan/index.html">About Us</a></li>
+    </ul>
+		
+		
+    <center>
+        <h1 style="color: rgb(38, 0, 255);font-size: 100px;">Quiz</h1>
+        <div id="time" style="background-color:#007BFF; color:white; padding: 15px 30px; width:300px;">Time left = <span id="timer"></span></div>
+    </center>
+        <br>
+        <div id="quiz" style="padding-left: 40px;padding-right: 40px;"></div>
+	<center>
+        <button id="submit" style="background-color:#007BFF; color:white; padding: 15px 30px; width:300px;">Get Results</button>
+        <br>
+        <div id="results" style="font-size: 30px;"></div>
+    </center>
+
+    <script src="../js/script.js"></script>
+	
+	<!-- Page editors link -->
+         <div id="editor">
+          <a href="editors-dulan.html">Page Editors Page</a>
+        </div>
+
+</body>
+
+<!--Gllery View java script code-->
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+    </script>
+
+    <!-- Link for webpage icons sourcecode -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Day and Night theme changer javascript code -->
+    <script>
+      let dayNight = document.querySelector('.dayNight')
+      let menuToggle = document.querySelector('.menuToggle')
+      let body = document.querySelector('body')
+      let navigation = document.querySelector('.navigation')
+
+      dayNight.onclick = function () {
+        body.classList.toggle('dark')
+        dayNight.classList.toggle('active')
+      }
+
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+      }
+    </script>
+
+</html>

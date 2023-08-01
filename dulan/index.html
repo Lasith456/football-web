@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sport X - Student Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+    <link rel = "icon" href ="../images/Sport-X-Logo.png" type = "image/x-icon">
+    <link href='../css/website_styles.css' rel='stylesheet' type='text/css'>
+	<link href='../css/style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body style="background-image: url('../images/backgroundDetails.jpg');">
+	<!-- header -->
+    <header>
+        <!-- Web site logo -->
+        <a href="../images/Sport-X-Logo.jpg" class="logo">Sport X</a>
+        <!-- Day and Night Themes changer and menu -->
+        <div class="rightSide">
+            <div class="buttons dayNight">
+                <ion-icon name="moon-outline" role="img" class="md hydrated" aria-label="moon outline"></ion-icon>
+                <ion-icon name="sunny-outline" role="img" class="md hydrated" aria-label="sunny outline"></ion-icon>
+            </div>
+            <div class="buttons menuToggle">
+                <ion-icon name="menu-outline" role="img" class="md hydrated" aria-label="menu outline"></ion-icon>
+                <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+<!--Navigation Sidebar-->
+    <ul class="navigation">
+        <li><a href="../pasindu/Main_Page.html">Home</a></li>
+        <li><a href="../pasindu/Query_Form.html">Query Form</a></li>
+        <li><a href="../tharindu/buy-products.html">Shop</a></li>
+        <li><a href="../dulan/quiz.html">Quiz</a></li>
+        <li><a href="../lasith/svg.html">Site Map</a></li>
+        <li><a href="../lasith/Gallery_view.html">Gallery</a></li>
+        <li><a href="../Additional_Content.html">Extra Content</a></li>
+        <li><a href="../dulan/index.html">About Us</a></li>
+    </ul>
+
+    <div class="container" style="display: inline;">
+
+
+        <div class="heading" style="margin-top:120px;">
+            <h1 style="font-family:poppins; font-size:46px; margin-bottom:30px;">OUR TEAM</h1>
+        </div>
+        <div>
+            <!-- Image 1 -->
+			<div class="content_img">
+                <img src='../images/image1.png' style="width:100%;" alt="tharindu-pic">
+                <div class="ovelay-text">
+                    <h2>Tharindu Wickramasinghe</h2>
+                    <h3>w1867203</h3>
+                    <h3>20210550</h3>
+                    <h3>SE Student</h3>
+                    <h3>Level 4</h3>
+                    <h3>Student 02</h3>
+                </div>
+            </div>
+			
+			<!-- Image 2 -->
+            <div class="content_img">
+                <img src='../images/image3.png' style="width:100%;" alt="pasindu-pic">
+                <div class="ovelay-text">
+                    <h2>Pasindu Hasaranga</h2>
+                    <h3>w1867200</h3>
+                    <h3>20210539</h3>
+                    <h3>SE Student</h3>
+                    <h3>Level 4</h3>
+                    <h3>Student 01</h3>
+                </div>
+
+            </div>           
+
+
+            <!-- Image 3 -->
+            <div class="content_img">
+                <img src='../images/image4.png' style="width:100%;" alt="dulan-pic">
+                <div class="ovelay-text">
+                    <h2>Dulan Vidanagamage</h2>
+                    <h3>w1867664</h3>
+                    <h3>20210554</h3>
+                    <h3>CS Student</h3>
+                    <h3>Level 4</h3>
+                    <h3>Student 03</h3>
+                </div>
+
+            </div>
+
+            <!-- Image 4 -->
+            <div class="content_img">
+                <img src='../images/image2.png' style="width:100%;" alt="lasith-pic">
+                <div class="ovelay-text">
+                    <h2>Lasith Viduranga</h2>
+                    <h3>w1867208</h3>
+                    <h3>20210568</h3>
+                    <h3>SE Student</h3>
+                    <h3>Level 4</h3>
+                    <h3>Student 04</h3>
+                </div>
+            </div>
+			<div class="clearfix"></div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+	
+	<!-- Page editors link -->
+         <div id="editor">
+          <a href="editors-dulan.html">Page Editors Page</a>
+        </div>
+</body>
+
+<!-- Link for webpage icons sourcecode -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	
+<!--Gllery View java script code-->
+<script>
+    let dayNight = document.querySelector('.dayNight')
+    let menuToggle = document.querySelector('.menuToggle')
+    let body = document.querySelector('body')
+    let navigation = document.querySelector('.navigation')
+
+    dayNight.onclick = function () {
+      body.classList.toggle('dark')
+      dayNight.classList.toggle('active')
+    }
+
+    menuToggle.onclick = function () {
+      menuToggle.classList.toggle('active')
+      navigation.classList.toggle('active')
+    }
+  </script>
+
+</html>
