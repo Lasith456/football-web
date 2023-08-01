@@ -1,0 +1,63 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* */
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400,500,600&display=swap");
+*
+body{
+    font-family: "Hind", sans-serif;
+    margin: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    background-image: url(../images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creator-card{
+    height:600px;
+    width: 400px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 20px;
+    border-color: #2879fe;
+    background-color: white;
+}
+
+.img-wrap{
+   height: 70%;
+   width: 100%;
+   overflow: hidden; 
+   background-color: aquamarine;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background-image: url(../images/123.jpg);
+   background-position:center;
+   background-size: cover;
+}
+
+img{
+    width:100%
+}
+.content{
+    white-space: nowrap;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #281be2;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin: 5px 10px;
+}
+
